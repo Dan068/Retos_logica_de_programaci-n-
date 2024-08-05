@@ -1,1 +1,1 @@
-# Retos_logica_de_programaci-n-
+# Retos_logica_de_programacion
