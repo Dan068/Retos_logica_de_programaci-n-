@@ -148,3 +148,31 @@ numbers.forEach(number =>{
 console.log(`Numeros mayores a 10: ${countAbove10}`);
 
 // map
+
+let numbers1 = [1, 2, 3, 4, 5] 
+let  dupilcateNumbers = numbers1.map( num => num *2)
+console.log(dupilcateNumbers);
+
+const usersMap = [
+  {name:'Alice', age: 35},
+  {name:'Bob', age: 25},
+  {name:'Charlie', age: 45},
+]
+const nameMap = usersMap.map(user => user.name)
+console.log(nameMap);
+
+const userDescription = usersMap.map(user => `${user.name} is ${user.age} years old`)
+console.log(userDescription);
+
+let product = [
+  {name: 'Laptop', price: 1000}, 
+  {name: 'Mouse', price: 20},
+]
+const discountedProducts = product.map(product=> {
+  return {...product, price: product.price *0.9} 
+})
+console.log(discountedProducts);
+
+const stringNumbers = ['1', '2', '3', '89654123']
+const convertedNumbers = stringNumbers.map( str =>Number(str))
+console.log(convertedNumbers);
